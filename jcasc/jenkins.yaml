@@ -1,0 +1,53 @@
+
+jenkins:
+  systemMessage: "Configured as Code"
+
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - basicSSHUserPrivateKey:
+              scope: GLOBAL
+              id: jenkins-github-ssh
+              username:
+              passphrase:
+              description: "SSH key for GitHub"
+              privateKeySource:
+                directEntry:
+                  privateKey: ${JENKINS_GITHUB_SSH}
+
+unclassified:
+  globalConfigFiles:
+    configs:
+      - json:
+          id: auth-json
+          name: auth.json
+          comment: from jcasc
+          content: ${JENKINS_AUTH_JSON}
+
+jobs:
+  - script: >
+      job('super-seed') {
+        triggers {
+          // This trigger will be overwritten, it's just here to auto-trigger _one_ build.
+          cron('H/2 * * * *')
+        }
+        scm {
+          git {
+            remote {
+              url ('git@github.com:figaw/configuration-as-code-jenkins-k8s-jobdsl.git')
+              credentials('jenkins-github-ssh')
+            }
+          }
+        }
+        steps {
+          dsl {
+            external('jobdsl/**/*.groovy')
+            removeAction('DELETE')
+          }
+        }
+      }
+
+security:
+  globaljobdslsecurityconfiguration:
+    useScriptSecurity: false
