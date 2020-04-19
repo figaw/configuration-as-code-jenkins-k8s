@@ -34,10 +34,15 @@ Jenkins, `2.222.1` is chosen as the latest LTS version. See: <https://jenkins.io
 
 Configuration as Code, `1.39` is the latest version today. See: <https://plugins.jenkins.io/configuration-as-code/>
 
-## Files
+## advanced Folder
 
-- `jenkins.yaml` is used for the simplest of JCasC containers.
-- `jenkins-credentials.yaml` is used for the bootstrapping,
-    since we need to authorize for GitHub.
-- `jenkins-credentials-extras.yaml` is an example of adding a configuration file,
-    through the environment.
+Examples for bootstrapping jobs and using the "config file provider"-plugin
+
+## advanced/demo Folder
+
+When I'm doing the demos I've created a service account / bot user for GitHub,
+    and added it as a collaborator. Then I can add an SSH key to it and
+    checkout with SSH.
+
+To let you do it without SSH, the "advanced examples" simply use HTTP;
+    but here's the code.

@@ -16,6 +16,25 @@ credentials:
                 directEntry:
                   privateKey: ${JENKINS_GITHUB_SSH}
 
+jobs:
+  - script: >
+      job('super-seed') {
+        scm {
+          git {
+            remote {
+              url ('https://github.com/figaw/configuration-as-code-jenkins-k8s-jobdsl.git')
+              credentials('jenkins-github-ssh')
+            }
+          }
+        }
+        steps {
+          dsl {
+            external('jobdsl/**/*.groovy')
+            removeAction('DELETE')
+          }
+        }
+      }
+
 security:
   globaljobdslsecurityconfiguration:
     useScriptSecurity: false
