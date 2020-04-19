@@ -18,6 +18,22 @@ How to run a basic Jenkins in Docker, for doing the JobDSL demo
 
 Files for running our JCasC in Docker
 
+## jobdsl
+
+JobDSL demo files
+
 ## k8s
 
-Files
+Files for running our Jenkins in K8s
+
+## resources
+
+Common configuration-files used by the examples
+
+# Compainion Repositories
+
+JobDSL, Seed Job repository:
+<https://github.com/figaw/configuration-as-code-jenkins-k8s-jobdsl>
+
+Example Project repository:
+<https://github.com/figaw/configuration-as-code-jenkins-k8s-pipeline>
