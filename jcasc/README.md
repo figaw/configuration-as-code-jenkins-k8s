@@ -9,7 +9,7 @@ docker build -t figaw/jcasc:2.222.1-1.39 .
 ## Run
 
 ```bash
-docker run figaw/jcasc:2.222.1-1.39
+docker run -p 8080:8080 figaw/jcasc:2.222.1-1.39
 ```
 
 1. Copy the passwords from the logs
