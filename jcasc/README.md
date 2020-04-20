@@ -12,21 +12,13 @@ docker build -t figaw/jcasc:2.222.1-1.39 .
 docker run -p 8080:8080 figaw/jcasc:2.222.1-1.39
 ```
 
-1. Copy the passwords from the logs
-
-    ```bash
-    Jenkins initial setup is required. An admin user has been created and a password generated.
-    Please use the following password to proceed to installation:
-
-    6a80f338ea884110b956fa91d3f58d5f
-
-    This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
-    ```
-
-1. Install with no plugins, and just "continue as admin."
-
 Congratulations you now have a basic Jenkins configured as code!
-    Notice the "Configured as Code" text on the frontpage.
+    Notice the "Configured as Code!" text on the frontpage.
+
+> NB: To speed up the demos, we've added configuration to the `Dockerfile`,
+> to skip the setup wizard of Jenkins.
+> An admin user can be configured later under
+> `Configure Global Security, Security Realm, Jenkins’ own user database`.
 
 ## Versions
 

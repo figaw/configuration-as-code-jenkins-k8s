@@ -1,6 +1,6 @@
 # JCasC in K8s with Helm3
 
-## PreReqs
+## Prerequisites
 
 See: https://helm.sh/docs/intro/quickstart/
 
