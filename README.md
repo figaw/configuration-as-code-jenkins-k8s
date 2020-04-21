@@ -12,7 +12,7 @@ The slides from the presentation is available in handout format, in `configurati
 
 ### Video
 
-Link will be available "shortly."
+You can find the recording on YouTube: https://youtu.be/KB7thPsG9VA
 
 ## Demo Resources
 
