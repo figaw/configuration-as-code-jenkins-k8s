@@ -8,7 +8,7 @@ Demo resources for the Configuration as Code of Jenkins (for Kubernetes) talk on
 
 ### Slides
 
-The slides from the presentation is available in handout format, in `configuration-as-code-jenkins-k8s.pdf` in this repository.
+The slides from the presentation is available in handout format, in [this pdf file](pdf/configuration-as-code-jenkins-k8s.pdf/) .
 
 ### Video
 
