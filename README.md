@@ -12,7 +12,7 @@ The slides from the presentation is available in handout format, in [this pdf fi
 
 ### Video
 
-Link will be available "shortly."
+[See Referenced Video](https://www.youtube.com/watch?v=KB7thPsG9VA&t=155s)
 
 ## Demo Resources
 
