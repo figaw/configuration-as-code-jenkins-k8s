@@ -33,8 +33,12 @@ Examples for bootstrapping jobs and using the "config file provider"-plugin
 ## advanced/demo Folder
 
 When I'm doing the demos I've created a service account / bot user for GitHub,
-    and added it as a collaborator. Then I can add an SSH key to it and
-    checkout with SSH.
+    and added it as a collaborator to the repositories.
+    It allows me to add a single SSH key to the service account and
+    checkout with SSH using the same SSH key for multiple repositories.
+    See "Machine Users" on
+    [Managing Deploy Keys](https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users)
+    for more information.
 
 To let you do it without SSH, the "advanced examples" simply use HTTP;
     but here's the code.

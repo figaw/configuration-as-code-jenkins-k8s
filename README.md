@@ -20,7 +20,11 @@ Link will be available "shortly."
 
 1. Generate an ssh-keypair called `github_id_rsa`.
 1. Use the public key on your GitHub service account / bot user.
-1. Put the private key in the `resources`-folder and use it when creating Jenkins with Helm.
+    See "Machine Users" on
+    [Managing Deploy Keys](https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users)
+    for more information.
+1. Put the private key in the `resources`-folder and use it when runnin the advanced jcasc examples or
+    creating Jenkins with Helm.
 
 ### Folders
 
