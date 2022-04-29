@@ -7,13 +7,13 @@ See: https://helm.sh/docs/intro/quickstart/
 1. Add the stable repo to Helm
 
     ```bash
-    helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+    helm repo add jenkins https://charts.jenkins.io
     ```
 
 1. Search for Jenkins
 
     ```bash
-    helm search repo stable/jenkins
+    helm search repo jenkins/jenkins
     ```
 
 ## Scripts
