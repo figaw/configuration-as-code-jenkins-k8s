@@ -1,27 +1,27 @@
-master:
+controller:
     installPlugins:
-    - configuration-as-code:1.38
-    - credentials-binding:1.21
-    - branch-api:2.5.5
-    - config-file-provider:3.6.3
+    - configuration-as-code:1414.v878271fc496f
+    - credentials-binding:1.27.1
+    - branch-api:2.1044.v2c007e51b_87f
+    - config-file-provider:3.9.0
     - ssh:2.6.1
-    - envinject:2.3.0
-    - environment-script:1.2.5
-    - jobConfigHistory:2.25
-    - rebuild:1.31
-    - git:4.2.2
-    - timestamper:1.11.2
-    - job-dsl:1.77
+    - envinject:2.4.0
+    - environment-script:1.2.6
+    - jobConfigHistory:2.30
+    - rebuild:1.33.1
+    - git:4.11.1
+    - timestamper:1.17
+    - job-dsl:1.79
     - workflow-aggregator:2.6
-    - kubernetes:1.25.2
-    - bouncycastle-api:2.18
+    - kubernetes:1.31.3
+    - bouncycastle-api:2.26
 
-    tag: 2.222.1
+    tag: 2.332.2
 
     JCasC:
       enabled: true
       configScripts:
-        baseConfig: |
+        base-config: |
           jenkins:
             systemMessage: "Configured as Code"
 
@@ -77,4 +77,4 @@ master:
 
 agent:
   image: figaw/jenkins-inbound-agent-gcloud
-  tag: 4.3-4
+  tag: 4.10-3
