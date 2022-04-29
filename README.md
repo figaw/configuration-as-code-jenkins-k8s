@@ -40,7 +40,7 @@ Files for running our JCasC in Docker
 
 JobDSL demo files
 
-#### k8s
+#### k8s (UPDATED 2022-04-29)
 
 Files for running our Jenkins in K8s
 
